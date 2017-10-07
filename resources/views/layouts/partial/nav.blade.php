@@ -536,7 +536,7 @@
                                             </li>
 
                                             <li class="m-l-1">
-                                                <a class="text-gray-lighter" href="../apps/profile-details.html">
+                                                <a class="text-gray-lighter" href="{{ route('profile') }}">
                                                     <span class="nav-label">Profile Details</span>
                                                 </a>
                                             </li>
@@ -970,7 +970,7 @@
                             </li>
                             <li role="separator" class="divider"></li>
                             <li>
-                                <a href="../apps/profile-details.html">Your Profile</a>
+                                <a href="{{ route('profile') }}">Your Profile</a>
                             </li>
                             <li>
                                 <a href="../apps/profile-edit.html">Settings</a>
@@ -2064,7 +2064,7 @@
                         </a>
                         <ul>
                             <li class="">
-                                <a href="../apps/profile-details.html">
+                                <a href="{{ route('profile') }}">
                                     <span class="nav-label">Profile Details</span>
                                 </a>
                             </li>

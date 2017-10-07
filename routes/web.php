@@ -13,4 +13,8 @@
 
 Auth::routes();
 
+// PAGE
 Route::get('/', 'PageController@index')->name('home');
+
+// USER
+Route::get('/profile', 'UserController@profile')->name('profile');
