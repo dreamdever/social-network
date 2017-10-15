@@ -18,3 +18,8 @@ Route::get('/', 'PageController@index')->name('home');
 
 // USER
 Route::get('/profile', 'UserController@profile')->name('profile');
+
+// HOMEPAGE
+Route::get('penis', function() {
+    return view('welcome');
+});
