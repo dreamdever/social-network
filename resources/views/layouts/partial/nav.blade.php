@@ -961,7 +961,7 @@
                         <a class="dropdown-toggle user-dropdown" data-toggle="dropdown" href="#" role="button">
                             <span class="m-r-1">{{ Auth::user()->name }}</span>
                             <div class="avatar avatar-image avatar-sm avatar-inline">
-                                <img alt="User" src="https://s3.amazonaws.com/uifaces/faces/twitter/travis_arnold/128.jpg">
+                                <img alt="User" src="{{ asset('assets/images/avatars/default-avatar.png') }}">
                             </div>
                         </a>
                         <ul class="dropdown-menu">
@@ -1019,7 +1019,7 @@
                 <div class="media">
                     <div class="media-left media-top">
                         <div class="avatar avatar-image avatar-inline">
-                            <img src="../assets/images/avatars/avatar-28.jpg" alt="Avatar">
+                            <img src="{{ asset('assets/images/avatars/default-avatar.png') }}" alt="Avatar">
                             <i class="avatar-status bg-success avatar-status-bottom"></i>
                         </div>
                     </div>
@@ -1070,7 +1070,7 @@
 
             <div class="sidebar-container-big-icons">
                 <div class="avatar avatar-image avatar-inline m-b-1">
-                    <img src="../assets/images/avatars/avatar-28.jpg" alt="Avatar">
+                    <img src="{{ asset('assets/images/avatars/default-avatar.png') }}" alt="Avatar">
                     <i class="avatar-status bg-success avatar-status-bottom"></i>
                 </div>
                 <p class="text-white m-y-0">Sandy McGlynn</p>

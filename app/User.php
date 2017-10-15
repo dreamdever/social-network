@@ -28,7 +28,6 @@ class User extends Authenticatable
     ];
 
     protected $attributes = [
-        'description' => "",
         'remember_token' => ""
     ];
 }

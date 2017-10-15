@@ -60,7 +60,9 @@
                             <div class="media-left p-r-2">
                                 <div class="center-block">
                                     <div class="avatar avatar-lg center-block">
-                                        <img class="img-circle center-block m-t-1 m-b-2" src="https://s3.amazonaws.com/uifaces/faces/twitter/snowwrite/128.jpg" alt="Avatar">
+                                        <div class="avatar avatar-lg avatar-icon visible-lg-inline-block visible-md-inline-block visible-sm-inline-block visible-xs-inline-block m-r-1 bg-gray-light">
+                                            <i class="avatar-content fa fa-user"></i>
+                                        </div>
                                         <i class="avatar-status avatar-status-bottom bg-danger b-brand-gray-darker"></i>
                                     </div>
                                 </div>
@@ -94,7 +96,7 @@
                             <div class="hr-text hr-text-left">
                                 <h6 class="text-white"><strong>Profile</strong></h6>
                             </div>
-                            {{ Auth::user()->description }}
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             <div class="hr-text hr-text-left m-t-2">
                                 <h6 class="text-white"><strong>Labels</strong></h6>
                             </div>

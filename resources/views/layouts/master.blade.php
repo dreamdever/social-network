@@ -218,7 +218,7 @@
                                             <div class="media">
                                                 <div class="media-left media-middle">
                                                     <a href="../apps/email-details.html">
-                                                        <div class="avatar"> <img class="media-object img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/91bilal/128.jpg" alt="Avatar"><i class="avatar-status avatar-status-bottom bg-success b-gray-darker"></i> </div>
+                                                        <div class="avatar"> <img class="media-object img-circle" src="{{ asset('assets/images/avatars/default-avatar.png') }}" alt="Avatar"><i class="avatar-status avatar-status-bottom bg-success b-gray-darker"></i> </div>
                                                     </a>
                                                 </div>
                                                 <div class="media-body media-auto">
@@ -828,7 +828,7 @@
                                             <div class="media">
                                                 <div class="media-left">
                                                     <div class="avatar avatar-image avatar-sm">
-                                                        <img class="media-object img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/aleclarsoniv/128.jpg" alt="Avatar">
+                                                        <img class="media-object img-circle" src="{{ asset('assets/images/avatars/default-avatar.png') }}" alt="Avatar">
                                                         <i class="avatar-status avatar-status-bottom bg-warning b-brand-gray-darker"></i>
                                                     </div>
                                                 </div>
@@ -866,7 +866,7 @@
                                             <div class="media">
                                                 <div class="media-left">
                                                     <div class="avatar avatar-image avatar-sm">
-                                                        <img class="media-object img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/enricocicconi/128.jpg" alt="Avatar">
+                                                        <img class="media-object img-circle" src="{{ asset('assets/images/avatars/default-avatar.png') }}" alt="Avatar">
                                                         <i class="avatar-status avatar-status-bottom bg-success b-brand-gray-darker"></i>
                                                     </div>
                                                 </div>
