@@ -102,7 +102,7 @@
             @yield('content')
 
             <!-- START Layout Options (Right Side) -->
-            @if ( Auth::check() )
+            @if ( Auth::check() && false )
 
                 @include('layouts.partial.layout_options')
 
