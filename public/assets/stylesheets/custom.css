@@ -3,3 +3,48 @@
   padding-top: 4em;
 }
 
+#timeline .loading-spinner {
+  height: 33px;
+  display: none;
+}
+
+.timeline .btn-like {
+  border-radius: 1.5em;
+}
+
+.chat:hover .scrollbar-custom::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.chat:hover .scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.chat:hover .scrollbar-custom::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #323232;
+}
+
+.chat .scrollbar-custom::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px transparent;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+.chat .scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.chat .scrollbar-custom::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px transparent;
+  background-color: transparent;
+}
+

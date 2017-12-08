@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/Bratislava',
 
     /*
     |--------------------------------------------------------------------------
@@ -225,6 +225,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'User' => App\User::class,
+        'Post' => App\Post::class,
 
     ],
 

@@ -1,2 +1,451 @@
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit;padding:0;margin:0}.group:before,.group:after{content:" ";display:table}.group:after{clear:both}body{font-family:"Lato",sans-serif;font-size:100%;color:#fff}h3{font-size:2.4em;padding-top:2em;margin-bottom:.25em}strong{color:#1a6da4}a{color:inherit;text-decoration:none;display:inline-block;position:relative;padding-bottom:3px;transition:.2s all ease-in-out}a:after{content:'';display:block;margin:auto;height:1px;width:0px;background:transparent;transition:width .5s ease, background-color .5s ease}a:hover:after{width:100%;background:#fff}img{max-width:100%;height:auto;vertical-align:middle}ul li{list-style:none;display:inline-block}ul li a{padding:.5em}button{border:none;cursor:pointer}button:focus{outline:none}.item-block{display:block !important}.container{max-width:1280px;margin:0 auto;padding:0 2%}.flex-container{display:flex}.underline{width:2.5em;height:.25em;margin:0 auto 2em auto;background:#fff;border-radius:4px}.btn{color:#fff;background-color:#212121;font-size:.7em;font-weight:bold;text-transform:uppercase;padding:1.4em 2.5em;margin:0 auto 10em auto;border-radius:2em;transition:.5s ease-in-out}.btn:hover{transform:scale(1.15)}.back-to-top{position:fixed;color:#919191;bottom:.25em;right:1.3em;z-index:5;display:block;opacity:.8;transition:opacity .2s ease}.back-to-top:hover:after{width:0}.back-to-top:focus,.back-to-top:hover{opacity:1}header{color:#d9d9d9;background:linear-gradient(rgba(15,15,15,0.6), rgba(15,15,15,0.6)),url("../img/social-network.jpg") no-repeat;background-position:center center;background-size:cover}header .container{max-width:100%;padding:0}header .flex-container{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:1em;border-bottom:1px solid gray}header .flex-container #brand h1{font-size:1em;text-transform:uppercase}header .flex-container #nav-bar #mobile-nav{color:#d9d9d9;display:none;cursor:pointer}header .flex-container #nav-bar #nav li a:hover{color:#fff}header #social-network{max-width:980px;margin:auto;padding:0 3%;text-align:center}header #social-network h2{color:#fff;font-size:2.55em;padding:3em 0 .7em 0em;text-transform:uppercase}header #social-network p{width:70%;padding:0 0 4em 0;margin:auto}header #social-network a:hover:after{width:0}#technology{color:#fff;background:#212121;text-align:center}#technology h2{font-size:2.55em;padding:3em 0 .7em 0em}#technology .underline{background:#fff}#technology p{color:#999;font-size:.9em;line-height:1.3em;width:50%;margin:0 auto 2em auto}#technology a{text-decoration:underline}#technology a:hover{color:#1a6da4;text-decoration:none}#technology a:hover:after{width:0}#technology .flex-container{justify-content:space-between;flex-flow:wrap;margin-top:3em;padding-bottom:4em}#technology .flex-container .logo-wrapper{flex-basis:10%}#technology .flex-container .logo-wrapper img{height:6em}#team{color:#333;background:#fff;text-align:center}#team h2{font-size:2.55em;padding-top:2em;margin-bottom:2em}#team .flex-container{justify-content:space-around;flex-flow:wrap}#team .flex-container .blurb{flex-basis:30%}#team .flex-container .blurb .photo{width:7.5em;height:7.5em;margin:auto;border-radius:50%;background:url("../img/profile_placeholder.gif") center center no-repeat;background-size:cover;border:6px solid #fff;box-shadow:0 0 0 1px #f2f2f2}#team .flex-container .blurb h3{font-size:1em;padding-top:.6em}#team .flex-container .blurb p{font-size:.8em;margin:auto}#team .flex-container .blurb:first-child .photo{background-image:url("../img/andrej.jpg")}#team .underline{background:#ccc;width:40%;height:.05em}#team p{width:45%;line-height:1.4em;margin:3em auto 0 auto;padding-bottom:4em}#about{color:#fff;background:#212121;text-align:center}#about h2{font-size:2.55em;padding-top:2em;padding-bottom:2em}#table{padding-bottom:4em;overflow-x:auto}#table table{color:#ccc;margin:auto;border-collapse:collapse}#table table thead tr{background:#1a6da4;border:none !important}#table table td,#table table th{padding:.5em 1em}#table table tr{border-bottom:0.05em solid #ccc}footer{color:#6e6e6e;background:#141414;text-align:center}footer p{font-size:.8em;padding:1.4em 0}@media (max-width: 55.625em){#team .underline{width:60%}#team #text{width:60%}#technology .flex-container .logo-wrapper:nth-child(1){flex-basis:33%}#technology .flex-container .logo-wrapper:nth-child(2){flex-basis:33%}#technology .flex-container .logo-wrapper:nth-child(3){flex-basis:33%}#technology .flex-container .logo-wrapper:nth-child(4){flex-basis:50%;margin-top:2.5em}#technology .flex-container .logo-wrapper:nth-child(5){flex-basis:50%;margin-top:2.5em}}@media (max-width: 46.25em){#technology p{width:60%}}@media (max-width: 43.75em){#team .flex-container .blurb{flex-basis:100%}}@media (max-width: 42.5em){#top-bar{position:relative}#mobile-nav{display:block !important}#nav{background:gray;display:none;opacity:0;position:absolute;width:100%;left:0;top:100%;text-align:center}#nav li{display:block;margin-top:.5em}#nav li:last-child{margin-bottom:.5em}#nav li a{padding:0}}@media (max-width: 30em){#technology .flex-container .logo-wrapper{flex-basis:100% !important;margin-top:2.5em !important}#technology .flex-container .logo-wrapper:first-child{margin-top:0 !important}}
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0
+}
+
+.group:before,
+.group:after {
+    content: " ";
+    display: table
+}
+
+.group:after {
+    clear: both
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 100%;
+    color: #fff
+}
+
+h3 {
+    font-size: 2.4em;
+    padding-top: 2em;
+    margin-bottom: .25em
+}
+
+strong {
+    color: #1a6da4
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    transition: .2s all ease-in-out
+}
+
+a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease
+}
+
+a:hover:after {
+    width: 100%;
+    background: #fff
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle
+}
+
+ul li {
+    list-style: none;
+    display: inline-block
+}
+
+ul li a {
+    padding: .5em
+}
+
+button {
+    border: none;
+    cursor: pointer
+}
+
+button:focus {
+    outline: none
+}
+
+.item-block {
+    display: block !important
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%
+}
+
+.flex-container {
+    display: flex
+}
+
+.underline {
+    width: 2.5em;
+    height: .25em;
+    margin: 0 auto 2em auto;
+    background: #fff;
+    border-radius: 4px
+}
+
+.btn {
+    color: #fff;
+    background-color: #212121;
+    font-size: .7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1.4em 2.5em;
+    margin: 0 auto 10em auto;
+    border-radius: 2em;
+    transition: .5s ease-in-out
+}
+
+.btn:hover {
+    transform: scale(1.15)
+}
+
+.back-to-top {
+    position: fixed;
+    color: #919191;
+    bottom: .25em;
+    right: 1.3em;
+    z-index: 5;
+    display: block;
+    opacity: .8;
+    transition: opacity .2s ease
+}
+
+.back-to-top:hover:after {
+    width: 0
+}
+
+.back-to-top:focus,
+.back-to-top:hover {
+    opacity: 1
+}
+
+header {
+    color: #d9d9d9;
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(15, 15, 15, 0.6)), url("../../images/homepage/social-network.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover
+}
+
+header .container {
+    max-width: 100%;
+    padding: 0
+}
+
+header .flex-container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid gray
+}
+
+header .flex-container #brand h1 {
+    font-size: 1em;
+    text-transform: uppercase
+}
+
+header .flex-container #nav-bar #mobile-nav {
+    color: #d9d9d9;
+    display: none;
+    cursor: pointer
+}
+
+header .flex-container #nav-bar #nav li a:hover {
+    color: #fff
+}
+
+header #social-network {
+    max-width: 980px;
+    margin: auto;
+    padding: 0 3%;
+    text-align: center
+}
+
+header #social-network h2 {
+    color: #fff;
+    font-size: 2.55em;
+    padding: 3em 0 .7em 0em;
+    text-transform: uppercase
+}
+
+header #social-network p {
+    width: 70%;
+    padding: 0 0 4em 0;
+    margin: auto
+}
+
+header #social-network a:hover:after {
+    width: 0
+}
+
+#technology {
+    color: #fff;
+    background: #212121;
+    text-align: center
+}
+
+#technology h2 {
+    font-size: 2.55em;
+    padding: 3em 0 .7em 0em
+}
+
+#technology .underline {
+    background: #fff
+}
+
+#technology p {
+    color: #999;
+    font-size: .9em;
+    line-height: 1.3em;
+    width: 50%;
+    margin: 0 auto 2em auto
+}
+
+#technology a {
+    text-decoration: underline
+}
+
+#technology a:hover {
+    color: #1a6da4;
+    text-decoration: none
+}
+
+#technology a:hover:after {
+    width: 0
+}
+
+#technology .flex-container {
+    justify-content: space-between;
+    flex-flow: wrap;
+    margin-top: 3em;
+    padding-bottom: 4em
+}
+
+#technology .flex-container .logo-wrapper {
+    flex-basis: 10%
+}
+
+#technology .flex-container .logo-wrapper img {
+    height: 6em
+}
+
+#team {
+    color: #333;
+    background: #fff;
+    text-align: center
+}
+
+#team h2 {
+    font-size: 2.55em;
+    padding-top: 2em;
+    margin-bottom: 2em
+}
+
+#team .flex-container {
+    justify-content: space-around;
+    flex-flow: wrap
+}
+
+#team .flex-container .blurb {
+    flex-basis: 30%
+}
+
+#team .flex-container .blurb .photo {
+    width: 7.5em;
+    height: 7.5em;
+    margin: auto;
+    border-radius: 50%;
+    background: url("../../images/homepage/profile_placeholder.gif") center center no-repeat;
+    background-size: cover;
+    border: 6px solid #fff;
+    box-shadow: 0 0 0 1px #f2f2f2
+}
+
+#team .flex-container .blurb h3 {
+    font-size: 1em;
+    padding-top: .6em
+}
+
+#team .flex-container .blurb p {
+    font-size: .8em;
+    margin: auto
+}
+
+#team .flex-container .blurb:first-child .photo {
+    background-image: url("../../images/homepage/andrej.jpg")
+}
+
+#team .flex-container .blurb:nth-child(2) .photo {
+    background-image: url("../../images/homepage/martin.jpg")
+}
+
+#team .flex-container .blurb:nth-child(3) .photo {
+    background-image: url("../../images/homepage/stanley.jpg")
+}
+
+#team .underline {
+    background: #ccc;
+    width: 40%;
+    height: .05em
+}
+
+#team p {
+    width: 45%;
+    line-height: 1.4em;
+    margin: 3em auto 0 auto;
+    padding-bottom: 4em
+}
+
+#about {
+    color: #fff;
+    background: #212121;
+    text-align: center
+}
+
+#about h2 {
+    font-size: 2.55em;
+    padding-top: 2em;
+    padding-bottom: 2em
+}
+
+#table {
+    padding-bottom: 4em;
+    overflow-x: auto
+}
+
+#table table {
+    color: #ccc;
+    margin: auto;
+    border-collapse: collapse
+}
+
+#table table thead tr {
+    background: #1a6da4;
+    border: none !important
+}
+
+#table table td,
+#table table th {
+    padding: .5em 1em
+}
+
+#table table tr {
+    border-bottom: 0.05em solid #ccc
+}
+
+footer {
+    color: #6e6e6e;
+    background: #141414;
+    text-align: center
+}
+
+footer p {
+    font-size: .8em;
+    padding: 1.4em 0
+}
+
+@media (max-width: 55.625em) {
+    #team .underline {
+        width: 60%
+    }
+    #team #text {
+        width: 60%
+    }
+    #technology .flex-container .logo-wrapper:nth-child(1) {
+        flex-basis: 33%
+    }
+    #technology .flex-container .logo-wrapper:nth-child(2) {
+        flex-basis: 33%
+    }
+    #technology .flex-container .logo-wrapper:nth-child(3) {
+        flex-basis: 33%
+    }
+    #technology .flex-container .logo-wrapper:nth-child(4) {
+        flex-basis: 50%;
+        margin-top: 2.5em
+    }
+    #technology .flex-container .logo-wrapper:nth-child(5) {
+        flex-basis: 50%;
+        margin-top: 2.5em
+    }
+}
+
+@media (max-width: 46.25em) {
+    #technology p {
+        width: 60%
+    }
+}
+
+@media (max-width: 43.75em) {
+    #team .flex-container .blurb {
+        flex-basis: 100%
+    }
+}
+
+@media (max-width: 42.5em) {
+    #top-bar {
+        position: relative
+    }
+    #mobile-nav {
+        display: block !important
+    }
+    #nav {
+        background: gray;
+        display: none;
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        text-align: center
+    }
+    #nav li {
+        display: block;
+        margin-top: .5em
+    }
+    #nav li:last-child {
+        margin-bottom: .5em
+    }
+    #nav li a {
+        padding: 0
+    }
+}
+
+@media (max-width: 30em) {
+    #technology .flex-container .logo-wrapper {
+        flex-basis: 100% !important;
+        margin-top: 2.5em !important
+    }
+    #technology .flex-container .logo-wrapper:first-child {
+        margin-top: 0 !important
+    }
+}
+
+
 /*# sourceMappingURL=main.css.map */

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('assets/stylesheets/homepage/main.css') }}">
 
     <link rel="icon" type="image/png" href="{{ asset('assets/images/homepage/favicon/favicon.ico') }}">
-    
+
 
     <title>Sociálna sieť</title>
 </head>
@@ -22,10 +22,9 @@
             <div id="top-bar" class="flex-container">
                 <div id="brand">
                     <h1>
-                        Logo
-                        <!--<a href="">
-                            <img src="assets/img/Logo-brand/logo.png" alt="logo">
-                        </a>-->
+                        <a href="">
+                            <img src="{{ asset('assets/images/favicons/favicon-32x32.png')}}" alt="logo"> SPIN
+                        </a>
                     </h1>
                 </div>
                 <nav id="nav-bar">
@@ -33,7 +32,7 @@
                         <span class="hamburger-box">
                           <span class="hamburger-inner"></span>
                         </span>
-                    </button>  
+                    </button>
                     <ul id="nav">
                         <li><a href="#social-network">Sociálna sieť</a></li>
                         <li><a href="#technology">Technológie</a></li>
@@ -44,40 +43,40 @@
             </div>
         </div>
         <div id="social-network" class="container">
-            <h2>Projekt Sociálna Sieť</h2>
+            <h2>Projekt SPIN</h2>
             <div class="underline"></div>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis atque beatae dicta maiores eaque tenetur vero voluptates ipsum cumque vel.
+                Spin je sociálna sieť pre komunikáciu medzi vývojármi. Tento projekt integruje najmodernejšie technológie vývoja internetových webstránok.
             </p>
-            <a href="#" class="btn">Prejsť na projekt</a>
+            <a href="{{ route('home') }}" class="btn">Prejsť na projekt</a>
         </div>
     </header>
 
     <main>
-        
+
         <section id="technology">
             <div class="container">
                 <h2>Použité Technológie</h2>
                 <div class="underline"></div>
                 <p>
-                     Celý náš projekt je postavený na PHP frameworku <a href="https://laravel.com/ ">Laravel</a> a ďaľšie použité technológie sú: <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">HTML5</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS3</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript</a>. 
+                     Celý náš projekt je postavený na PHP frameworku <a href="https://laravel.com/ ">Laravel</a> a ďaľšie použité technológie sú: <br><a href="http://php.net/manual/en/language.references.php">PHP</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">HTML5</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS3</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript</a>.
                 </p>
                 <div class="flex-container">
                     <div class="logo-wrapper">
-                        <img src="assets/img/logo/HTML-logo.png" alt="HTML5">
-                    </div> 
+                        <img src="{{ asset('assets/images/homepage/logo/HTML-logo.png') }}" alt="HTML5">
+                    </div>
                     <div class="logo-wrapper">
-                         <img src="assets/img/logo/CSS-logo.png" alt="CSS3">
-                    </div> 
+                         <img src="{{ asset('assets/images/homepage/logo/CSS-logo.png') }}" alt="CSS3">
+                    </div>
                     <div class="logo-wrapper">
-                        <img src="assets/img/logo/JS-logo.png" alt="JS">
-                    </div> 
+                        <img src="{{ asset('assets/images/homepage/logo/JS-logo.png') }}" alt="JS">
+                    </div>
                     <div class="logo-wrapper">
-                         <img src="assets/img/logo/PHP-logo.png" alt="HTML5">
-                    </div> 
+                         <img src="{{ asset('assets/images/homepage/logo/PHP-logo.png') }}" alt="HTML5">
+                    </div>
                     <div class="logo-wrapper">
-                         <img src="assets/img/logo/LARAVEL-logo.png" alt="HTML5">
-                    </div> 
+                         <img src="{{ asset('assets/images/homepage/logo/LARAVEL-logo.png') }}" alt="HTML5">
+                    </div>
                 </div>
             </div>
         </section>
@@ -104,7 +103,7 @@
                 </div>
                 <div class="underline"></div>
                 <p id="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis atque beatae dicta maiores eaque tenetur vero voluptates ipsum cumque vel, sed voluptatibus aliquam iste, corporis totam dolores hic neque fuga.
+                    Tvorcovia Spinu študujú druhý rok na fakulte prírodných vied UCM v Trnave. Každý člen sa vo voľnom čase venuje vývoju dynamických webstránok, dizajnu, programovaniu desktopových aplikácií a návrhu databáz.
                 </p>
             </div>
         </section>
@@ -138,37 +137,37 @@
                             <tr>
                                 <td>Vyhľadavanie užívatelov</td>
                                 <td>3h</td>
-                                <td>-</td>
+                                <td>3h</td>
                                 <td>Stanley</td>
                             </tr>
                             <tr>
                                 <td>Návrh databázy</td>
                                 <td>5h</td>
-                                <td>-</td>
+                                <td>5h</td>
                                 <td>Martin &amp; Stanley</td>
                             </tr>
                             <tr>
                                 <td>Profil užívatelov</td>
                                 <td>10h</td>
-                                <td>-</td>
+                                <td>10h</td>
                                 <td>Všetci</td>
                             </tr>
 							<tr>
                                 <td>Timeline</td>
                                 <td>5h</td>
-                                <td>-</td>
+                                <td>5h</td>
                                 <td>Martin &amp; Stanley</td>
                             </tr>
 							<tr>
                                 <td>Systém priatelov</td>
-                                <td>20h</td>
-                                <td>-</td>
+                                <td>5h</td>
+                                <td>5h</td>
                                 <td>Všetci</td>
                             </tr>
 							<tr>
                                 <td>Systém správ + live chat</td>
-                                <td>10h</td>
-                                <td>-</td>
+                                <td>5h</td>
+                                <td>5h</td>
                                 <td>Všetci</td>
                             </tr>
                         </tbody>

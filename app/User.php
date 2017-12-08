@@ -29,6 +29,7 @@ class User extends Authenticatable
 
     protected $attributes = [
         'description' => "",
-        'remember_token' => ""
+        'remember_token' => "",
+        'img' => "assets/images/avatars/default-avatar.png",
     ];
 }

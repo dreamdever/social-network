@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('title', 'Registrácia')
+
 @section('content')
 
 <div class="content register-page">
@@ -11,13 +13,13 @@
                         <a href="../index.html"> <img src="../assets/images/spin-logo-inverted-@2X.png" alt="Logo" class="m-t-3 m-b-3 h-20"></a>
                     </div>
                     <div class="panel-body">
-                        <h2 class="text-center f-w-300 m-b-0">Register</h2>
-                        <p class="text-center m-b-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h2 class="text-center f-w-300 m-b-0">Registrácia</h2>
+                        <p class="text-center m-b-3"><strong>Tu sa môžete zaregistrovať do najlepšej sociálnej siete.</strong> <small>srandujem</small></p>
                         <form  method="POST" action="{{ route('register') }}">
                             {{ csrf_field() }}
 
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                                <label>Username</label>
+                                <label>Meno a priezvisko</label>
                                 <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
 
                                 @if ($errors->has('name'))
@@ -27,7 +29,7 @@
                                 @endif
                             </div>
                             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                                <label>Password</label>
+                                <label>Heslo</label>
                                 <input id="password" type="password" class="form-control" name="password" required>
 
                                 @if ($errors->has('password'))
@@ -37,7 +39,7 @@
                                 @endif
                             </div>
                             <div class="form-group">
-                                <label>Repeat Password</label>
+                                <label>Heslo znovu</label>
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -52,21 +54,44 @@
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox"> Accept Terms &amp; Privacy Policy
+                                    <input type="checkbox"> Prijímam všetky podmienky
                                 </label>
                             </div>
-                            <button type="submit" role="button" class="btn m-b-2 btn-block btn-primary">Register</button>
+                            <button type="submit" role="button" class="btn m-b-2 btn-block btn-primary">Registrovať</button>
                         </form>
+
                     </div>
                     <div class="panel-footer b-a-0 b-r-a-0">
-                        <a href="{{ route('password.request') }}">Forgot Password?</a>
-                        <a href="{{ route('login') }}" class="pull-right">Login</a>
+                        <a id="smola" href="#">Zabudli ste heslo?</a>
+                        <a href="{{ route('login') }}" class="pull-right">Prihlásenie</a>
                     </div>
                 </div>
-                <p class="text-gray-light text-center"><strong>SPIN Dashboard </strong> <span class="text-gray-light">&#xA9; 2009 - 2016. Made by <i class="fa fa-fw fa-heart text-danger"></i> New York, US</span></p>
+                <p class="text-gray-light text-center"><strong>Projekt Sociálna sieť </strong> <span class="text-gray-light">&#xA9; 2017 Tvorcovia <i class="fa fa-fw fa-heart text-danger"></i> Študenti UCM</span></p>
             </div>
         </div>
     </div>
 
 </div>
+<script>
+    $('#smola').click(function () {
+        toastr["error"]("To ma skutočne mrzí", "Zabudli ste heslo?")
+        toastr.options = {
+        "closeButton": true,
+          "debug": false,
+          "newestOnTop": false,
+          "progressBar": true,
+          "positionClass": "toast-top-right",
+          "preventDuplicates": false,
+          "onclick": null,
+          "showDuration": "300",
+          "hideDuration": "1000",
+          "timeOut": "5000",
+          "extendedTimeOut": "1000",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+    }
+ });
+</script>
 @endsection
